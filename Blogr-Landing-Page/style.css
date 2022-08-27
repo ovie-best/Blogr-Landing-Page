@@ -1,0 +1,840 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    /* width: 100%; */
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Ubuntu", sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+header {
+    padding: 50px 30px 180px 30px;
+    /* background-color: hsl(13, 100%, 72%); */
+    
+    background-image: url("images/bg-pattern-intro-desktop.svg"), linear-gradient(135deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 100%) ;
+    background-size: 350%, 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position:  35% 34%, 0% 0%;
+    border-bottom-left-radius: 100px;
+    width: 100%;
+}
+
+.header-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 4rem 0 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 1s ease-in-out;
+    z-index: 10;
+}
+
+.btn-close {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 86%;
+    cursor: pointer;
+}
+
+.menu-wrapper {
+    background-color: #fff;
+    width: 86%;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1), 0px 20px 30px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+hr {
+    width: 100%;
+    color: hsl(240, 2%, 79%);
+    margin: 2rem 0 1rem 0;
+}
+
+.menu-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-items {
+    width: 100%;
+}
+
+.menu-items h4, .btn {
+    color: hsl(208, 49%, 24%);
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+.btn {
+    font-weight: 600;
+    text-align: center;
+}
+
+.menu-buttons {
+    font-size: 1.7rem;
+}
+
+.login-btn div {
+    color: hsl(208, 49%, 24%);
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+.sign-up-btn div {
+    color: #fff;
+    margin-bottom: 1rem;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: 700;
+    background-image: linear-gradient(135deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 100%) ;
+}
+
+.sign-up-btn div:hover {
+    background-color: hsl(355, 100%, 74%);
+    color: #fff;
+    transition: 300ms ease-in-out;
+    background-image: none;
+}
+
+.login-btn div:hover {
+    color: #fff;
+    background-color: black;
+    transition: 300ms ease-in-out;
+}
+
+.menu-items h4:hover {
+    color: hsl(240, 2%, 79%);
+}
+
+.menu-items .sub-menu:hover {
+    display: flex;
+}
+
+.menu-items .arrow:hover {
+    transform: rotate(-180deg);
+}
+
+.sub-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(240, 11%, 95%);
+    border-radius: 5px;
+    width: 100%;
+    padding: 1.4rem;
+    display: none;
+}
+
+.sub-menu a {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: hsl(207, 13%, 34%);
+    padding: 1rem;
+}
+
+.sub-menu a:hover {
+    color: hsl(208, 49%, 24%);
+}
+
+.arrow {
+    margin-left: 1rem;
+    transition: all 1s ease-in-out;
+}
+
+
+.CTA-link {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.login{
+    margin-right: 10px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.signup, .free {
+    background-color: #fff;
+    color: hsl(356, 100%, 66%);
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+.free:hover, .signup:hover {
+    background-color: hsl(355, 100%, 74%);
+    color: #fff;
+    transition: 300ms ease-in-out;
+}
+
+.learn-more {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 15px 35px;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.learn-more:hover {
+    background-color: #fff;
+    color: hsl(356, 100%, 66%);
+    transition: 300ms ease-in-out;
+}
+
+
+div.main {
+    text-align: center;
+    color: #fff;
+    padding-top: 80px;
+}
+
+.main h1 {
+    font-size: 4rem;
+    font-family: "Overpass", sans-serif;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.main p {
+    font-size: 1.2rem;
+    font-family: "Overpass", sans-serif;
+}
+.header-buttons {
+    margin-top: 50px;
+}
+
+
+.hide-menu {
+    opacity: 0;
+    top: 100vw;
+}
+
+.show-menu {
+    display: flex;
+}
+
+.hambuger {
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.hide-hamburger {
+    opacity: 0;
+}
+
+
+/*===================== DESIGNED FOR THE FUTURE ========================= */
+
+.future {
+    padding-top: 100px;
+    font-family: "Overpass", sans-serif;
+    overflow-x: hidden;
+}
+
+.future h2 {
+    color: hsl(208, 49%, 24%);
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: -7%;
+    margin-right: 15px;
+}
+
+.future h3 {
+    font-size: 1.5rem;
+    color: hsl(208, 49%, 24%);
+    text-align: left;
+    padding-top: 40px;
+}
+
+.future p {
+    text-align: left;
+    color: hsl(207, 13%, 34%);
+    line-height: 1.5rem;
+}
+
+.future-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.future-image  {
+    
+    /* position: absolute; */
+    width: 50%;
+}
+
+.future-image img {
+    width: 180%;
+    margin-right: -20%;
+}
+
+.future-text {
+    width: 50%;
+    text-align: left;
+}
+
+/*===================== STATE OF THE ART INFASTRUCTURE ========================= */
+
+.Infastructure {
+    background-color: hsl(237, 17%, 21%);
+    margin-top: 80px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    color: #fff;
+    width: 100%;
+    background-image: url(images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: -50% 80%;
+    background-size: 72%;
+}
+
+.infas-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    /* gap: 100px; */
+    position: relative;
+    padding: 8% 0;
+}
+
+.Infastructure h2 {
+    font-size: 2rem;
+    font-family: "Overpass", sans-serif;
+}
+
+.Infastructure p {
+    line-height: 1.5rem;
+    color: hsl(240, 2%, 79%);
+}
+
+
+.infas-img {
+    width: 52%;
+    position: absolute;
+    margin-top: 50px;
+}
+
+.infas-img img { 
+    width: 100%;
+}
+
+.infas-text {
+    width: 45%;
+    float: right;
+    position: relative;
+    left: 50%; 
+    margin-left: 50px;
+}
+
+/*===================== FREE, OPEN, SIMPLE ========================= */
+
+.free-o-s {
+    padding-top: 80px;
+    font-family: "Overpass", sans-serif;
+}
+
+
+.free-o-s h3 {
+    font-size: 1.5rem;
+    color: hsl(208, 49%, 24%);
+    text-align: left;
+    padding-top: 40px;
+}
+
+.free-o-s p {
+    text-align: left;
+    color: hsl(207, 13%, 34%);
+    line-height: 1.5rem;
+}
+
+.free-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.free-image  {
+    width: 50%;
+}
+.free-image img {
+    width: 180%;
+    margin-left: -80%;
+}
+.free-text {
+    width: 50%;
+}
+
+.mobile {
+    display: none;
+}
+
+.menu-buttons-desktop {
+    display: none;
+}
+
+/*===================== FOOTER ========================= */
+
+footer {
+    background-color: hsl(240, 10%, 16%);
+    color: #fff;
+    border-top-right-radius: 100px;
+    margin-top: 100px;
+}
+
+footer p {
+    line-height: 2.5rem;
+    font-size: 18px;
+}
+
+footer a {
+    color: hsl(240, 2%, 79%);
+    line-height: 2rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    transition: 300ms ease-in-out;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    padding: 80px 0;
+
+}
+/*===================== ATTRIBUTION========================= */
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;    
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+/*===================== RESPONSIVENESS ========================= */
+@media screen and (max-width: 700px) {
+    .footer-content {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-content div {
+        margin-bottom: 50px;
+    }
+
+    footer p {
+        line-height: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .free-content {
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .main h1 {
+        font-size: 3rem;
+    }
+   
+    .free-content {
+        display: block;
+        text-align: center;
+    }
+
+    .future-content {
+        flex-wrap: wrap-reverse;
+        text-align: center;
+        gap: 0px;
+    }
+
+    .free-image, .future-image {
+        display: none;
+    }
+
+    .free-image img {
+        width: none;
+        margin-left: 0%;
+    }
+    .free-text, .future-text {
+        width: 100%;
+    }
+
+    .free-text h3, .future-text h3, .free-text p, .future-text p {
+        text-align: center;
+    }
+
+    .mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .infas-cont {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        padding: 50% 0;
+    }
+
+    .infas-text {
+        width: 90%;
+        float: none;
+        text-align: center;
+        position: relative;
+        left: 0; 
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+
+    .infas-img {
+        width: 75%;
+        position: relative;
+        margin-top: 100px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .infas-img img { 
+        width: 100%;
+        margin-top: -50%;
+    }
+
+    .Infastructure {
+        background-position: 50% -180px;
+        background-size: 140%;
+    }
+
+    .future {
+        margin-bottom: 50%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .mobile img {
+        width: 150%;
+    }
+}
+
+
+
+@media screen and (max-width: 1115px) {
+    .future h2 {
+        margin-bottom: -3%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .future h2 {
+        margin-bottom: 50px;
+        font-size: 2rem
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .future h2, .Infastructure h2 {
+        font-size: 1.5rem
+    }
+}
+
+@media screen and (max-width: 1235px) {
+    .infas-cont {
+        padding: 5% 0;
+    }
+}
+
+@media screen and (max-width: 1135px) {
+    .infas-cont {
+        padding: 3% 0;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .infas-cont {
+        padding: 2% 0;
+    }
+}
+
+@media screen and (max-width: 932px) {
+    .infas-cont {
+        padding: 1% 0;
+    }
+}
+
+@media screen and (max-width: 922px) {
+    .infas-img img {
+        width: 105%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+   .infas-img {
+    width: 100%;
+   }
+}
+
+@media screen and (max-width: 641px) {
+    .main h1 {
+        font-size: 2rem;
+    }
+
+    .main p {
+        font-size: 1.1rem;
+    }
+
+    .header-container {
+        width: 100%;
+    }
+
+    .learn-more, .free {
+        padding: 15px 15px;
+        border-radius: 25px;
+    }
+
+    .header-buttons {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    span {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+   
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    display: block;
+}
+
+.menu {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+
+.hide-menu {
+    opacity: 1;
+    left: 0;
+}
+
+.btn-close {
+    display: none;
+}
+
+.menu-wrapper {
+    background-color: transparent;
+    width: 100%;
+    border-radius: 0;
+    margin: 0 auto;
+    box-shadow: none;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+
+hr {
+   display: none;
+}
+
+.menu-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-items {
+    position: relative;
+    font-size: 1rem;
+}
+
+.menu-items h4, .btn {
+    cursor: pointer;
+}
+
+.btn {
+    font-size: 1rem;
+}
+.menu-items h4 {
+    color: #fff;
+    opacity: 0.75;
+    font-size: 1rem;
+}
+
+.menu-items h4:hover {
+    color: #fff;
+    opacity: 1;
+    text-decoration: underline;
+}
+/* .btn {
+    font-weight: 600; 
+    text-align: center;
+} */
+
+/* .menu-buttons-desktop {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center
+} */
+
+.menu-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5%;
+}
+
+.login-btn div {
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.sign-up-btn div {
+    background-color: #fff;
+    color: hsl(356, 100%, 66%);
+    background-image: none;
+    margin-bottom: 0;
+}
+
+.sign-up-btn div:hover {
+    border: none;
+    color: #fff;
+    background-color: hsl(355, 100%, 74%);
+    background-image: none;
+}
+
+.menu-items-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+
+.menu-items h4:hover {
+    color: hsl(240, 2%, 79%);
+}
+
+.menu-items .sub-menu:hover {
+    display: flex;
+}
+
+.menu-items .arrow:hover {
+    transform: rotate(-180deg);
+}
+
+.sub-menu {
+    position: absolute;
+    align-items: flex-start;
+    background-color: #fff;
+    display: none;
+    box-shadow: 0px 50px 30px rgba(0,0,0,0.1) 0px 20px 30px rgba(0,0,0,0.1);
+}
+
+.sub-menu:hover {
+    font-size: 1rem;
+}
+
+.sub-menu a {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: hsl(207, 13%, 34%);
+    padding: 1rem;
+    text-align: left;
+}
+
+.sub-menu a:hover {
+    color: hsl(208, 49%, 24%);
+    text-align: left;
+}
+
+.hambuger {
+    display: none;
+}
+.arrow {
+    filter: brightness(200%);
+}
+
+header {
+    background-size: 220%, 100%;
+    padding: 2rem 0rem 7.7rem;
+    background-position:  35% 52%, 0% 0%;
+}
+}
