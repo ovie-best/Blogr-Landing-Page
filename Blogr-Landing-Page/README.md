@@ -12,7 +12,6 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
   - [Author](#author)
   - [Acknowledgments](#acknowledgments)
 
@@ -57,8 +56,8 @@ I did this using css flexbox.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [view my solution on Frontend mentor](https://www.frontendmentor.io/solutions/blogr-landing-page-LAM-0Xjhq-)
+- [Live site on netlify](https://magical-flan-d1b9ba.netlify.app/#)
 
 ## My process
 I used a desktop first aprroach in carrying out this project. I started out with structing my HTML code for the website and then I started adding my css styles for the desktop version first and them I used media queries to make it responsive 
@@ -68,7 +67,7 @@ and then added some special stylings for the mobile version. Javascript was adde
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- Css Flexbox
 - Desktop-first workflow
 - Vanilla Javascript
 
@@ -91,11 +90,6 @@ and then added some special stylings for the mobile version. Javascript was adde
 I will continue focusing on how absolute and relative positioning works.
 
 
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me to achieve the dropdown menu effect. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
 
 ## Author
 
@@ -106,4 +100,4 @@ I will continue focusing on how absolute and relative positioning works.
 
 ## Acknowledgments
 
-Thanks to frontend mentor coding challenges, they really help me understand more of what I have learnt by putting them into actual practice and thanks to ----------------- for your explanations.
+Thanks to frontend mentor coding challenges, they really help me understand more of what I have learnt by putting them into actual practice 
